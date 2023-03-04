@@ -1,0 +1,9 @@
+/* basic stylesheet with navigation on left */
+
+/* /////////////// basic elements /////////////// */
+
+body { background: #e5e5e5 url("../images/body_bg.jpg") top repeat-y; }
+
+#header { background: url("../images/top_purple_.jpg"); background-repeat: no-repeat; }	
+
+	

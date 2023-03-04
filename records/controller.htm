@@ -1,0 +1,88 @@
+<html><head>
+<title>Old Meeting House Records</title>
+<SCRIPT Language="JavaScript">
+<!--
+function select()
+   {
+   var len = document.forms[0].elements[0].length
+   var ans = -1
+   for ( var a = 0 ; a < len ; a++ )
+      {
+      thisele = document.forms[0].elements[0].options[a]
+      if (true == thisele.selected) { ans = a }
+      }
+
+   screenwin = parent.frames[1]
+   if (ans == 0)
+      {
+      screenwin.document.location = "genpreface.htm"
+      return "start"
+      }
+   if (ans == 1)
+      {
+      screenwin.document.location = "birthpreface.htm"
+      return "birth"
+      }
+   if (ans == 2) {
+       screenwin.document.location = "deathpreface.htm"
+       return "death"
+      }
+   if (ans == 3) {
+   screenwin.document.location = "gravepreface.htm"
+   return "grave"}
+
+   alert("SCRIPT ERROR:" + ans)
+   }
+
+function mytype()
+   {
+   var myname = document.forms[0].elements[1].value
+   myname = myname.toUpperCase()
+   document.forms[0].elements[1].value = myname
+   screenwin = parent.frames[1]
+
+   var mytype = select()
+
+   if (mytype == "start")
+      {
+      alert("PLEASE SELECT RECORD TYPE")
+      return false
+      }
+
+   var myurl  = mytype + ".htm?search=" + myname
+   screenwin.document.location = myurl
+   return false
+   }
+
+//-->
+</SCRIPT>
+<LINK REL='STYLESHEET' TYPE='text/CSS' HREF='style.css'>
+</HEAD>
+<BODY bgcolor="#FFFFFF">
+<table width="96%" align="CENTER" border="0">
+<TR>
+<td valign="top" align="left"><A HREF="../index.htm" target="_parent">BACK</A>&nbsp;</td>
+<td align="center">
+<FORM NAME="myform">
+<i>Record type:</i>
+<SELECT NAME="type" SIZE="1" onChange="select()">
+<OPTION VALUE="start" SELECTED>SELECT HERE
+<OPTION VALUE="birthout"      >BIRTHS
+<OPTION VALUE=death"          >DEATHS
+<OPTION VALUE=grave"          >GRAVES
+</SELECT>
+<i>name or 'all':</i>
+<INPUT TYPE='text'   NAME="search" length="15" size="20">
+<INPUT TYPE="SUBMIT" NAME="submit" VALUE="SEARCH">
+</form>
+</td></tr></table>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+document.myform.submit.onclick     = mytype
+document.myform.search.onchange    = mytype
+document.myform.onsubmit           = mytype
+//  -->
+</SCRIPT>
+</BODY>
+</HTML>

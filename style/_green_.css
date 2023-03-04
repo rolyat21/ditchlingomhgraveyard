@@ -1,0 +1,17 @@
+/* basic stylesheet with navigation on left */
+
+/* /////////////// basic elements /////////////// */
+
+body { background: #e5e5e5 url("../images/body_bg.jpg") top repeat-y; }
+
+#header { background: url("../images/top_green_.png"); background-repeat: no-repeat; }	
+
+a, .headerTitle a,#nav a, #nav a.on, #nav a.subon, h1,h2,h3   { color: #660000; }
+
+#nav li a:hover, #nav a:hover, .headerTitle a:hover, a:hover  { color: #9caa1e; 
+text-decoration: underline; font-weight:600}
+	
+#basecolor, .basecolor   {color: #6666CC;  /* logo colour */ }	
+	
+
+	

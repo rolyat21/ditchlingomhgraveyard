@@ -1,0 +1,206 @@
+/* basic stylesheet with navigation on left */
+
+/* /////////////// basic elements /////////////// */
+
+body {
+margin:0;
+padding:0;
+font:75%/1.4 verdana,Helvetica,sans-serif;
+background: #e5e5e5 url("../images/body_bg.jpg") top repeat-y;
+text-align:center;
+}
+
+h1 {
+	display: none;
+}
+
+h2 {
+font-size: 140%;
+padding-top: 0px;
+padding-bottom: 4px
+}
+
+h3 {
+height:39px;
+margin:0;
+padding:0;
+}
+
+p {
+	margin: 0;
+	padding: 0 0 5px 0;
+}
+
+a {
+	color: #D9189F;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #FC7AD5;
+	background-color: transparent;
+}
+
+
+/* ////////////// layout ///////////////// */
+
+#page {
+width:760px;
+margin:0 auto;
+padding:0;
+position:relative;
+xxbackground-color: #fff;
+color:#454545;
+text-align:left;
+}
+
+#main {
+position: absolute;
+top: 200px;
+width:100%;
+height:95%;
+
+}
+
+#header {
+width:760px;
+height:158px;
+background: url("../images/top.jpg"); background-repeat: no-repeat;
+}
+
+	.headerTitle {
+	position: absolute;
+	top: 0px;
+	right: 30px;
+	font-size: 2.5em;
+	}
+
+	.headerTitle a {
+	text-decoration: none;
+	background-color: transparent;
+	}
+	
+	.chaliceLogo {
+	position: absolute;
+	left: 35px;
+	top: 33px;
+	}
+
+	.chaliceLogo a {
+	background-color: transparent;
+
+	}
+
+#content {
+width:534px;
+background-color:#ffffff;
+background-repeat:repeat-y;
+margin:0 0 2px 190px;
+color:#454545;
+display:block;
+padding:0;
+}
+
+#rightcol {
+	float: right;
+	padding-left: 10px;
+	padding-right: 5px;
+	padding-top: 20px;
+	width: 120px;
+	border-left: thin solid Gray;
+	font-size: 0.8em;
+}
+#nav {
+float: left;
+padding-left: 10px;
+padding-top:20px;
+width:160px;
+}
+
+#nav a {
+	text-decoration: none;
+	color: #505050;
+	margin: 10px 0 0 0;
+	display: block;
+	line-height: normal;
+	padding-top: 0px;
+}
+	
+#nav a:hover {
+	color: #ee3399;
+}
+
+#nav a.on {
+	color: #6b186b;
+}
+
+#nav ul {
+	margin: 0;
+	padding-left: 20px;
+}
+
+#nav li {
+margin: 0;
+list-style:none;
+padding: 0;
+}
+
+#nav li a {
+padding-left:7px;
+background:url(link.gif) left center no-repeat;
+text-decoration:none;
+}
+
+#nav li a:hover {
+text-decoration:underline;
+}
+
+
+	#footer {
+	position: relative;
+	top: 100px;
+	margin: 5px;
+	padding: 5px;
+	text-align: center;
+	font-size: 0.8em;
+	border-top: 2px solid #eee
+	}
+	
+#footer a{
+text-decoration:none;
+color:#aaa;
+}
+
+#footer a:hover{
+color:#333;
+}
+
+.clearfix {
+	clear: both
+}
+
+.bold {
+	font-weight: bold;
+}
+.red {
+	color: #f00;
+}
+/* /////////////  images ////////////// */
+
+.imageright {
+	float: Right;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 8px;
+}
+.imageleft {
+	float: left;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 8px;
+}
+
+
+
+

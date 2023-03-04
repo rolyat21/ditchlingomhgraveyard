@@ -1,0 +1,149 @@
+/* basic stylesheet with navigation on left */
+
+/* /////////////// basic elements /////////////// */
+
+body, p, i {
+	margin:3;
+	padding:3;
+	font-family:Arial, Helvetica, sans-serif	
+	background: #e5e5e5;
+	text-align:left;
+	font-size:13px;
+	}
+
+.td1 {
+	margin:3;
+	padding:3;
+	font-family:Arial, Helvetica, sans-serif	
+	background: #e5e5e5;
+	text-align:left;
+	font-size:13px;
+	}
+
+.td2 {
+	margin:3;
+	padding:3;
+	font-family:Arial, Helvetica, sans-serif	
+	background: #e5e5e5;
+	text-align:left;
+	font-size:13px;
+	}
+
+.td3 {
+	margin:3;
+	padding:3;
+	font-family:Arial, Helvetica, sans-serif	
+	background: #e5e5e5;
+	text-align:left;
+	font-size:13px;
+	}
+
+.td4 {
+	margin:3;
+	padding:3;
+	font-family:Arial, Helvetica, sans-serif	
+	background: #e5e5e5;
+	text-align:left;
+	font-size:13px;
+	}
+
+.td5 {
+	margin:3;
+	padding:3;
+	font-family:Arial, Helvetica, sans-serif	
+	background: #e5e5e5;
+	text-align:left;
+	font-size:13px;
+	}
+
+.td6 {
+	margin:3;
+	padding:3;
+	font-family:Arial, Helvetica, sans-serif	
+	background: #e5e5e5;
+	text-align:left;
+	font-size:13px;
+	}
+
+
+#td3 {
+	margin:3;
+	padding:3;
+	font-family:Arial, Helvetica, sans-serif	
+	background: #e5e5e5;
+	text-align:left;
+	font-size:13px;
+	}	
+
+h {   
+	font:75%/1.4 verdana,Helvetica,sans-serif;
+	color: #6a1669;
+		 
+	}
+
+h1 {
+	font-size:30px;
+	}
+h2 {
+	font-size:24px;
+	}
+h3 {
+	font-size:20px;
+	}
+h4 {
+	font-size:18px;
+	}
+
+
+
+
+a 	{
+	color: #D9189F;
+	color: #FC7AD5;    /* purple */
+	background-color: transparent;
+	text-decoration: none;
+	}
+
+a:hover 
+	{
+	color: #FC7AD5;    /* purple */
+	/* color: #6a1669;   logo purple */
+	color: #6a1669;
+	}
+
+
+
+
+
+
+.clearfix 
+	{
+	clear: both
+	}
+
+.bold 
+	{
+	font-weight: bold;
+	}
+	
+.red 
+	{
+	color: #f00;
+	}
+
+/* /////////////  images ////////////// */
+	
+#basecolor 
+	{
+	color: #ee3399;
+	color: #FC7AD5;  /* old purple */
+	color: #6a1669; /* logo colour */
+	}	
+	
+.basecolor 
+	{
+	color: #ee3399;
+	color: #FC7AD5;  /* old purple */
+	color: #6a1669; /* logo colour */
+	}	
+	

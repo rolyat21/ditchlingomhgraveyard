@@ -1,0 +1,39 @@
+<HTML><HEAD><TITLE>Grave Register</TITLE>
+<LINK REL='STYLESHEET' TYPE='text/css' HREF='style.css'>
+<SCRIPT SRC="grave.js"></SCRIPT></HEAD>
+<BODY BGCOLOR="#F0F0F0">
+<TABLE ALIGN='CENTER' WIDTH='95%' BORDER="2" CELLPADDING='4' CELLSPACING='4'><TR>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+setuparray()
+tit = "<TR><TH class='td3'>Ref No.</TH><TH class='td3'>Grave & Monumental Inscriptions</TH>" +
+      "<TH class='td3'>Source</TH></TR>"
+document.writeln( tit )
+var myfind = document.location
+    myfind = myfind.toString()
+var mypos  = myfind.indexOf("search=")
+if (mypos == -1) { mypos = myfind.length }
+    myfind = myfind.substring(mypos + 7)
+    myfind = myfind.toUpperCase()
+    myfind = myfind.replace(/%20/ig," ")
+var hits = 0
+if   ((myfind == "ALL") | (myfind == "")) {var doall = true} else {var doall = false}
+for ( x = 1 ; x < array.length ; x++)
+      {
+      var myline = array[x]
+      if (doall == false)
+	 { eval("myline = myline.replace(/" + myfind + "/ig,'<FONT COLOR=black>" + myfind + "</FONT>')") }
+      var upper = myline.toUpperCase()
+      if ((upper.indexOf(myfind) != -1) | doall)
+	  {
+	  document.writeln("<TR>" + myline + "</TR>")
+	  hits += 1
+	  }
+      }
+if (hits == 0)	{hits = "NO"}
+if (hits == 1)	{S = ""} else {S = "S"}
+if (hits > 9) {document.writeln( tit ) }
+document.writeln("<TR><TD class='td1' COLSPAN='7'>" + hits + " HIT" + S + "</TD></TR>")
+//   -->
+</SCRIPT>
+</TABLE></BODY></HTML>
